@@ -1,5 +1,8 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import s from './Header.module.css'
+import {PATH} from "./Routes";
+
 export const Header = () => {
     return (
         // <div>
@@ -8,11 +11,11 @@ export const Header = () => {
         // </div>
 
     <div className={s.dropdown}>
-        <div className={s.dropbtn}>react homeworks:</div>
+        <h3 className={s.dropbtn}>react homeworks:</h3>
         <div className={s.dropdownContent}>
-                <a href="#/pre-junior">PRE-JUNIOR</a>
-                <a href="#/junior">JUNIOR</a>
-                <a href="#/junior-plus">JUNIOR-PLUS</a>
+            <NavLink to={PATH.PRE_JUNIOR}>PRE-JUNIOR</NavLink>
+            <NavLink to={PATH.JUNIOR}>PRE-JUNIOR</NavLink>
+            <NavLink to={PATH.JUNIOR_PLUS}>PRE-JUNIOR</NavLink>
             </div>
         </div>
     )
