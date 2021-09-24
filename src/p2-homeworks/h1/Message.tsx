@@ -11,7 +11,7 @@ function Message(props: MessagePropsType) {
     return (
         <div className={classes.chat}>
             <div className={classes.bubble + classes.me}>
-                <img src={props.avatar}></img>
+                <img src={props.avatar}/>
             <h3 className={classes.dialogTitle}>
                 {props.name}
             </h3>
