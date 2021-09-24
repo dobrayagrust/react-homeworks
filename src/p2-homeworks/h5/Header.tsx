@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Header() {
+export const Header = () => {
     return (
         <div>
             // add NavLinks
@@ -9,4 +9,3 @@ function Header() {
     )
 }
 
-export default Header
